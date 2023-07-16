@@ -103,7 +103,7 @@ public class AdminController {
 	@GetMapping("/getAdminData/{adminId}")
 	public List<AdminDetail> getAdminData(@PathVariable int adminId, @RequestHeader("Authorization") String authorizationToken)
 	{
-		System.out.println("I am in getAdminData Controller");
+		System.out.println("I am in getAdminData Controller...changes by Test Branch");
 		String token[] = authorizationToken.split(" ");
 		int result = tokenService.tokenAuthentication(token[1], adminId);
 		
