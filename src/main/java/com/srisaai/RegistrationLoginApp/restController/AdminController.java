@@ -42,7 +42,7 @@ public class AdminController {
 	@PostMapping("/login")
 	public ResponseEntity<Integer> login(@RequestBody AdminDetail adminDetail)
 	{
-		System.out.println("I am in login Controller");
+		System.out.println("In login Controller");
 		int status;
 		HttpHeaders httpHeader = null;
 	
