@@ -35,7 +35,7 @@ public class AdminController {
 	
 	@PostMapping("/saveAdmin")
 	public int saveAdminDetail(@RequestBody AdminDetail adminDetail) {
-		System.out.println("I am in saveAdminController by main");
+		System.out.println("saveAdminController by main");
 		return adminService.saveAdminDetail(adminDetail);
 	}
 	
