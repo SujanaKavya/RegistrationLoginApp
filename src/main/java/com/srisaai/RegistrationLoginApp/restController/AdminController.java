@@ -35,14 +35,14 @@ public class AdminController {
 	
 	@PostMapping("/saveAdmin")
 	public int saveAdminDetail(@RequestBody AdminDetail adminDetail) {
-		System.out.println("I am in saveAdminController by main");
+		System.out.println("saveAdminController in testbranch");
 		return adminService.saveAdminDetail(adminDetail);
 	}
 	
 	@PostMapping("/login")
 	public ResponseEntity<Integer> login(@RequestBody AdminDetail adminDetail)
 	{
-		System.out.println("In login Controller");
+		System.out.println("In login Controller in Test Branch");
 		int status;
 		HttpHeaders httpHeader = null;
 	
